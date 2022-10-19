@@ -1,10 +1,15 @@
 package model;
 
-public class Cartas {
-	private String tipo; 
+class Cartas {
+	public enum TipoCarta{
+		JOGADOR,ARMA,COMODO
+		};
+	
+	private TipoCarta tipo; 
 	private String nome;
 	
-	public Cartas(String tipo, String nome) {
+	public Cartas(TipoCarta tipo, String nome) {
+		super();
 		this.tipo = tipo;
 		this.nome  = nome;
 	}
