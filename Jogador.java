@@ -15,6 +15,10 @@ class Jogador {
 		nCartas++; 
 	}
 	
+	public String setNome(String s) {
+		this.nome = s;
+	}
+	
 	public String getNome() {
 		return this.nome;
 	}
