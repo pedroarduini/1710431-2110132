@@ -14,6 +14,14 @@ class Cartas {
 		this.nome  = nome;
 	}
 	
+	public String setTipo(TipoCarta t) {
+		this.tipo = t;
+	}
+	
+	public String setNome(String s) {
+		this.nome = s;
+	}
+	
 	public String getTipo() {
 		return this.tipo;
 	}
