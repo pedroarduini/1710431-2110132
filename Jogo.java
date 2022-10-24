@@ -1,5 +1,7 @@
 package model;
 import java.util.Random;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Jogo {
 	Random random = new Random();
@@ -128,7 +130,8 @@ public class Jogo {
 		montaEnvelope();
 		Iterator<Cartas> aux = baralho.iterator();
 		while(aux.hasNext()){
-			jogadores.get(aux).atribuirCarta(aux.next());
+			jogadores.get(atual).atribuirCarta(aux.next());
+			jogadores.get(atual).anotaBlocoDeNotas(aux.next().nome);
 			aux.remove();
 			atual++;
 			if(atual==6){
