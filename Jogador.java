@@ -3,17 +3,23 @@ package model;
 class Jogador {
 	private int posicao[] = new int[2];
 	private String nome;
-	public ArrayList<Cartas> cartasJ;
+	private ArrayList<Cartas> cartasJ;
 	private int nCartas = 0; 
+	private ArrayList<String> blocoDeNotas = new ArrayList<String>;
 	
 	public Jogador (String name) {
 		this.nome = name;
+		blocoDeNotas
 	} 
 	
 	public void atribuirCarta(Cartas carta) {
 		this.cartasJ.add(carta); 
 		nCartas++; 
 	}
+	
+	public void anotaBlocoDeNotas(String nome){
+		blocoDeNotas.add(nome);	
+	}	
 	
 	public String setNome(String s) {
 		this.nome = s;
