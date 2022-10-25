@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Tabuleiro {
+protected class Tabuleiro {
   ArrayList<ArrayList<Celula>> celulas;
   
   public Tabuleiro(){
@@ -21,7 +21,16 @@ public class Tabuleiro {
         celulas.get(i).add(new Celula(value,i,k));
       }
     }  
-    
   }  
   
+  //define qual célula foi clicada
+  public defineClique(int x, int y){
+   
+    return celula;
+  }  
+  
+  //valida se é possível ir até a célula em questão com o número de movimentos
+  public validaMovimento(int dado, Celula cel){
+    
+  }  
 }
