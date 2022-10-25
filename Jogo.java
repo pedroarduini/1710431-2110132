@@ -10,7 +10,7 @@ public class Jogo {
 	private ArrayList<Cartas> cartas;
 	private ArrayList<Cartas> baralho;
 	private ArrayList<Jogador> jogadores;
-	private ArrayList<Cartas> envelope;
+	protected ArrayList<Cartas> envelope;
 	
 	private Tabuleiro tabuleiro;
 	
