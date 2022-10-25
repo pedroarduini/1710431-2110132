@@ -1,7 +1,7 @@
 package model;
 
 class Jogador {
-	private int posicao[] = new int[2];
+	private Celula posicao; 
 	private String nome;
 	private ArrayList<Cartas> cartasJ;
 	private int nCartas = 0; 
@@ -9,7 +9,7 @@ class Jogador {
 	
 	public Jogador (String name) {
 		this.nome = name;
-		blocoDeNotas
+		posicao = new Celula();
 	} 
 	
 	public void atribuirCarta(Cartas carta) {
