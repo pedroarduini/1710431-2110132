@@ -1,6 +1,6 @@
 package model;
 
-public class Envelope {
+protected class Envelope {
     private String arma;
     private String assassino;
     private String lugar;
