@@ -23,15 +23,23 @@ protected class Celula{
     this.identificador = 'S';  
   }   
   
-  public getLinha(){
+  public int getLinha(){
     return linha; 
   } 
   
-  public getColuna(){
+  public int getColuna(){
     return coluna;  
   }  
  
-  public getId(){
+  public char getId(){
     return identificador; 
   } 
+  
+  public boolean gettemJogador(){
+      return temJogador;
+  }
+
+  public void settemJogador(){
+      temJogador = true;
+  }
 } 
