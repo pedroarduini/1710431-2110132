@@ -1,6 +1,6 @@
 package model;
 
-public class Acoes {
+protected class Acoes {
 	class Acusacao {
 		private Jogador acusador;
 		private Jogador acusado;
