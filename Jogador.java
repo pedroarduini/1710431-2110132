@@ -31,12 +31,10 @@ protected class Jogador {
 	
 	
 	
-	// x- linha e y - coluna
-	public void move(int x, int y) {
-		this.posicao[0] = x;
-		this.posicao[1] = y;
+	public Celula setCelula(Celula c) {
+		this.posicao = c;
 	}
-	public int[] getPosicao() {
+	public Celula getPosicao() {
 		return posicao;
 	}
 }
