@@ -1,6 +1,6 @@
 package model;
 
-class Jogador {
+protected class Jogador {
 	private Celula posicao; 
 	private String nome;
 	private ArrayList<Cartas> cartasJ;
