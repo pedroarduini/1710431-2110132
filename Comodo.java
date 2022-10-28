@@ -8,8 +8,9 @@ protected class Comodo{
   private int[][] portas;
   
   
-  public Comodo(String s, int[][] portas){
+  public Comodo(String s, int[][] p){
     nome = s;
+    portas = (int[][]) p.clone();
   }  
   
   public Comodo achaComodo(int l, int c){
@@ -74,7 +75,7 @@ protected class Comodo{
         portas[0] = new int[2]{19,16};
       }
     }
-    resposta = new Comodo(s);
+    resposta = new Comodo(s,portas);
     return resposta;
   }  
 
