@@ -35,6 +35,10 @@ protected class Celula{
     return identificador; 
   } 
   
+  public Comodo getComodo(){
+    return comodo;
+  }  
+  
   public boolean gettemJogador(){
       return temJogador;
   }
