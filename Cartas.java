@@ -1,6 +1,6 @@
 package model;
 
-class Cartas {
+protected class Cartas {
 	public enum TipoCarta{
 		JOGADOR,ARMA,COMODO
 		};
